@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: hnboTAnExe
+    url: jdbc:mysql://localhost/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    hibernate:
+      show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+  redis:
+    host: localhost
+    port: 6379
+    password:
+server:
+  port: 80
+  context-path: /sell
+wechat:
+  mpAppId: wxd4336f46af358021
+  mpAppSecret: ea8dbc7e206e7b1ab2146df8395bbf7b
+  mchId: 124324354
+  mchKey: 1243243534
+  keyPath: /opt/cert/wechatpay.p12
+  notifyUrl: http://qimoom.com/sell/pay/notify
+  openAppId: xxxx
+  openAppSecret: xxxx
+  templateId:
+    orderStatus: 12243546556756
+
+
+projectUrl:
+  wechatMpAuthorizeUrl: http://qimoom.com/sell/wechat/authorize
+  wechatMpCodeSkipUrl: http://qimoom.com/sell/wechat/userInfo
+  wechatOpenAuthorizeUrl: http://qimoom.com/sell/wechat/qrAuthorize
+  wechatOpenCodeSkipUrl: http://qimoom.com/sell/wechat/qrUserInfo
+  sell: http://qimoom.com/sell
